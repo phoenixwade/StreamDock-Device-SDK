@@ -16,11 +16,11 @@ def main() -> None:
 
     print(f"Found {len(devices)} StreamDock device(s)")
     for dev in devices:
-        info = dev.deviceInfo
         print(
-            f"- {info.name} "
-            f"VID=0x{info.vid:04X} "
-            f"PID=0x{info.pid:04X}"
+            f"- {dev.__class__.__name__} "
+            f"VID=0x{dev.vendor_id:04X} "
+            f"PID=0x{dev.product_id:04X} "
+            f"Path={dev.path}"
         )
 
 
