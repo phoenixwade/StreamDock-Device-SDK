@@ -12,7 +12,7 @@ authors = [
 readme = "README.md"
 license = { text = "MIT" }
 dependencies = [
-  "pyudev",
+  "hidapi>=0.14.0",
   "pillow"
 ]
 requires-python = ">=3.10.0"
