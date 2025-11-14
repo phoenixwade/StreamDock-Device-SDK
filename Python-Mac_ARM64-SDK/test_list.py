@@ -7,7 +7,7 @@ HERE = Path(__file__).resolve().parent
 SRC_DIR = HERE / "src"
 sys.path.insert(0, str(SRC_DIR))
 
-from streamdock.DeviceManager import DeviceManager
+from StreamDock.DeviceManager import DeviceManager
 
 
 def main() -> None:
